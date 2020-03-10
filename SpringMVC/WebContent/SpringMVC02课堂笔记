@@ -1,0 +1,38 @@
+SpringMVC02 课堂笔记
+	在SrpingMVC中 实现文件的上传和下载的操作
+		操作的前提:在当前的项目中 添加必要的文件上传下载的jar文件(2个)
+		1.文件的下载
+			在默认的情况下Content-Dispiostion  web的请求采用是inline的请求方式
+			下载的内容
+				能显示则显示,如果不能现在则进行下载
+				
+			在实际的工作中,标准的下载要求使用 :以附件的方式进行文件下载
+			修改默认的下载方式,修改成为attachment;filename=文件名
+			attachment:已附件的模式进行下载
+			filename:下载时的默认文件名
+			
+			重要的点: 使用SpringMVC提供具体的下载操作
+			
+		2.文件的上传
+			在SpringMVC中 所有的文件的上传 都是基于apache上传的插件
+			
+			在SpringFMVC中对于上传的操作 专门提供一个控件 MultipartResvoler,该控件是一个封装类
+			专门用于封装 提交信息的2进制流
+			
+			在页面的提交form中有一个属性enctype
+			enctype="application/x-www-form-urlencoded 默认值 ,上传一些简单的文字信息(字符串信息)
+			在文件的上传操作中 enctype的取值 必须更改为,multipart/form-data
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

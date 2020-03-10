@@ -1,0 +1,66 @@
+SpringMVC01 课堂笔记
+	1.回顾上学期的教学重点
+		a.可以手工的创建并搭建SpringMVC的开发环境（注解的方式）
+			1.创建项目，添加支持的jar文件 -15个jar文件
+			
+		b.快速的创建控制Action（注解完成）
+			2.创建基本的SpringMVC的搭建
+		c.熟练的使用Json的返回类型
+			3.使用responseBody--JSON的使用
+			
+	2.SpringMVCD中的内置对象和 作用域的使用
+		
+		客户端 ---（参数 数值、字符串）----SpringMVC控制类（相应的处理）---将结果向客户端显示（数据的传递）
+																	1.JSON方式的传递 （页面不会跳转，接受Json串，使用js进行解析）
+																	2.使用内置对象携带参数 跳转
+		传统的使用内置对象 携带参数 进行页面的跳转
+			J2EE --内置对象--在Jsp的页面中使用 、servlet中能使用
+					request
+					response
+					session
+					application-ServletContext
+					out
+					exception
+					page
+					pageContext
+					config
+					
+			SpringMVC --如何使用内置对象
+			
+			创建一个控制类<--SpringMVC框架 <--Spring框架 ---创建了一个Web项目 <--依赖于J2EE框架（内置对象）
+											1.IOC:反转依赖注入--管理对象的生成和销毁(生命周期)
+											2.AOP:切面服务
+											
+				客户端的请求（req）----> 	Spring框架管理  ----> 注入	-->SpringMVC框架 --->控制类中可以直接使用					
+											
+			SpringMVC主要使用的内置对象-和作用域的使用
+					1.request-请求作用域
+					2.Session-会话作用域
+					3.Application-全局作用域
+					4.文件的下载
+			
+			
+			课程的目的：
+				1. SpringMVC 创建一个服务器端的控制类 ，进行业务的处理  注解的声明
+				2.可以接受客户端传递的参数 （简单的数据，对象数据 ）
+				3.处理 --数据库操作 ，文件操作 
+				4.响应
+					1.JSON方式 --js解析
+					2.跳转 --携带参数（内置对象 map类型）使用哪个作用域
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
